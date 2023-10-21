@@ -4,6 +4,7 @@ install:
 	pip install -r requirements.txt
 format:
 	#format
+	black *.py src/*.py
 lint:
 	#pylint
 test:
