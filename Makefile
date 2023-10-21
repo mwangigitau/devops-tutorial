@@ -10,9 +10,10 @@ lint:
 	pylint --disable=R,C *.py src/*.py
 test:
 	#testing
-	python3 -m pytest -vv --cov=src test_logic.py
+	python3 -m pytest -vv --cov=src --cov=main test_*.py
 build:
 	#build containers
+	docker compose up --build
 deploy:
 	#deploy
 all: install format lint test deploy
