@@ -6,4 +6,4 @@ RUN pip3 install -r requirements.txt
 RUN python -m textblob.download_corpora
 COPY . main.py /app/
 EXPOSE 8080
-CMD ["python3","main.py"]
+# CMD ["python3","main.py"]
