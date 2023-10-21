@@ -4,7 +4,7 @@ services:
   backend:
       build: .
       container_name: docker_fastapi
-      command: bash -c "python3 main.py"
+      # command: bash -c "python3 main.py"
       volumes:
           - .:/app
       ports:
